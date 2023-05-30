@@ -6,16 +6,13 @@ let audioDecode
 let audioEncode
 
 // setup your signature endpoint here: https://github.com/zoom/videosdk-sample-signature-node.js
-let signatureEndpoint = 'https://or116ttpz8.execute-api.us-west-1.amazonaws.com/default/videosdk'
+let signatureEndpoint = 'https://kcwm14i07k.execute-api.ap-southeast-1.amazonaws.com/latest'
 let sessionName = ''
 let sessionPasscode = ''
 let userName = 'Participant' + Math.floor(Math.random() * 100)
 let role = 1
 let userIdentity
 let sessionKey
-let geoRegions
-let cloudRecordingOption
-let cloudRecordingElection
 
 zmClient.init('US-en', 'CDN')
 
