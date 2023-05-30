@@ -35,10 +35,7 @@ function getSignature() {
       sessionName: document.getElementById('sessionName').value || sessionName,
       role: role,
       userIdentity: userIdentity,
-      sessionKey: sessionKey,
-      geoRegions: geoRegions,
-      cloudRecordingOption: cloudRecordingOption,
-      cloudRecordingElection: cloudRecordingElection
+      sessionKey: sessionKey
     })
   }).then((response) => {
     return response.json()
