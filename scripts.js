@@ -31,6 +31,9 @@ function getSignature() {
 
   fetch(signatureEndpoint, {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify({
       sessionName: document.getElementById('sessionName').value || sessionName,
       role: role,
